@@ -1,0 +1,148 @@
+@include media-md {
+  .header {
+    padding: 0.5rem $media-md-padding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    .header-btn {
+      display: block;
+    }
+    .toggle-bar {
+      display: none;
+    }
+  }
+
+  section.hero-section {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 100vh;
+    max-height: 800px;
+    min-height: 640px;
+    .hero-section-images {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      flex-basis: 60%;
+    }
+
+    .bg-img {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      margin-right: -10rem;
+      background-image: url(../../images/bg-intro-desktop.svg);
+    }
+    .mock-up {
+      position: relative;
+      left: 20%;
+      height: 100vh;
+      max-height: 800px;
+      min-height: 640px;
+    }
+    .hero-section-text {
+      padding-left: 6rem;
+      text-align: start;
+      margin-top: 5%;
+      h1,
+      p {
+        text-align: start;
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+      .btn {
+        margin: 0;
+        display: inline;
+      }
+    }
+  }
+
+  section.details-section {
+    .heading-pry {
+      max-width: 65%;
+      text-align: start;
+      // margin: 0;
+      p {
+        text-align: start;
+        margin: 0;
+      }
+      .font-md-large {
+        text-align: start;
+      }
+    }
+    .cards-container {
+      text-align: start;
+      & .card {
+        margin-bottom: 0;
+        width: 24%;
+
+        &-img {
+          margin: 0;
+          margin-bottom: 1rem;
+        }
+
+        &-text,
+        h3 {
+          text-align: start;
+        }
+      }
+    }
+  }
+  section.articles-section {
+    padding: 3rem;
+    .article-cards-container {
+      margin: 0;
+      padding: 0;
+    }
+    .article-card {
+      margin: 0;
+      &-img {
+        padding: 0;
+        height: 11rem;
+      }
+    }
+    .article-text {
+      margin-top: 1rem;
+    }
+  }
+
+  footer.footer {
+    padding: 2rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    .footer-left {
+      display: flex;
+      gap: 5rem;
+      width: 70%;
+    }
+    .footer-start {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .footer-logo {
+        flex-basis: 50%;
+      }
+    }
+    .social-links {
+      display: flex;
+      flex-basis: 60%;
+      flex-flow: row wrap;
+      text-align: start;
+      align-items: center;
+
+      li {
+        width: 50%;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}

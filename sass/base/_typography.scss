@@ -1,0 +1,29 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: clamp(0.9rem, 1.1vw, 1.1rem);
+  font-family: 'Public Sans', sans-serif;
+}
+p {
+  color: $grayish-blue;
+  line-height: 1.5;
+}
+
+.font-lg {
+  font-size: 2.5rem;
+  font-weight: weight(regular);
+  color: $dark-blue;
+  text-align: center;
+}
+.font-md-large {
+  font-size: 2rem;
+  font-weight: weight(regular);
+  color: $dark-blue;
+  text-align: center;
+}

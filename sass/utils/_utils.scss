@@ -1,0 +1,15 @@
+.section-center {
+  padding: 1.5rem;
+}
+
+@include media-md {
+  section.section-center {
+    padding: 5rem 6rem;
+    // margin: 0 auto;
+  }
+  .grid-system {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+}
